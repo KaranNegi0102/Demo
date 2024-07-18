@@ -1,0 +1,109 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.app {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 1em 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar nav ul li a svg {
+  margin-right: 10px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-switch button {
+  margin-left: 10px;
+}
+
+.create-task-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.create-task-button:hover {
+  background-color: #2980b9;
+}
+
+.board-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-list {
+  width: 30%;
+}
+
+.task-card {
+  background-color: white;
+  border: 1px solid #ecf0f1;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.task-card .priority {
+  font-weight: bold;
+}
+
+.task-card .priority.high {
+  color: red;
+}
+
+.task-card .priority.medium {
+  color: orange;
+}
+
+.task-card .priority.low {
+  color: green;
+}
+
+.task-card .footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
